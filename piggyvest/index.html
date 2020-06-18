@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <!--css link-->
+     <link rel="stylesheet" href="./style.css">
+                        <!--google font link-->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Quicksand:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"crossorigin="anonymous"/>
+    <title>piggyvest</title>
+</head>
+<body>
+    <div class="opac">
+    <div class="cal-nav">
+        <img src="./piggy-png_1_.png" alt="logo" class="cal-img">
+        <div class="cal-nav-menu">
+            <p>About</p>
+            <p>Stories</p>
+            <p>FAQ</p>
+            <p>Blog</p>
+            <p>Login</p>
+            <button id="nav-btn">Create a Free Account</button>  
+            <span class="menu"><i class="fas fa-bars"></i></span> 
+        </div>
+        
+    </div>
+    <div class="cal-body">
+        
+        <div class="cal-input">
+            <h2>CALCULATE YOUR INTEREST</h2>
+            <p> <b> Over ₦1,000,000,000 securely saved every month.</b><br>
+                PiggyVest uses bank-level security measures to keep your data safe.
+                PiggyVest users save & invest well over a billion every single month, and they are just getting started.</p>
+         <form action="" class="cal-from">
+             <div class="cal-flex1">
+             <label for="cal-amt" class="cal-lab">Amount</label><br>
+             <input type="number" class="input-box" id="cal-amt"><br>
+             <label for="cal-freq" class="cal-lab">Saving Frequency</label><br>
+             <select name="cal-freq" class="input-box" id="cal-freq" placeholder="select plan">
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select><br></div>
+            <div class="cal-flex2">
+            <label for="cal-plan" class="cal-lab">Saving Plan</label><br>
+             <select name="cal-plan" class="input-box" id="cal-plan" placeholder="select plan">
+                 <option value="Flex-Naira">Flex-Naira</option>
+                 <option value="Safelock">Safelock</option>
+                 <option value="Flex-Dollar">Flex-Dollar</option>
+                 <option value="Target">Target</option>
+             </select><br>
+            <label for="cal-amt" class="cal-lab">Saving duration(Yearly)</label><br>
+             <input type="number" class="input-box" id="cal-year"></div>
+             
+         </form>
+            <button class="input-box" id= "cal-sub"> calculate</button>
+            <p id="error"></p>
+         <div class="result">
+             <h2 class="res-result">YOUR RETURN DETAILS</h2>
+            
+             <b class="ans-lab">TOTAL AMOUNT:</b><b class="answer space">0</b><br>
+             <b class="ans-lab">INTEREST:</b><b class="interest space">0</b><br>
+             <b class="ans-lab">CAPITAL:</b><b class="capital space">0</b>
+         </div>
+        </div>
+    </div> 
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
